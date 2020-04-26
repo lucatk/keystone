@@ -1,5 +1,14 @@
 # @keystonejs/field-content
 
+## 5.4.8
+
+### Patch Changes
+
+- [`4e56eed6`](https://github.com/keystonejs/keystone/commit/4e56eed68c643fd436c371e2635d3024c51968b0) [#2636](https://github.com/keystonejs/keystone/pull/2636) Thanks [@MadeByMike](https://github.com/MadeByMike)! - Added documentation about using blocks in the content field.
+
+- Updated dependencies [[`4e56eed6`](https://github.com/keystonejs/keystone/commit/4e56eed68c643fd436c371e2635d3024c51968b0)]:
+  - @keystonejs/fields@9.0.5
+
 ## 5.4.7
 
 ### Patch Changes
