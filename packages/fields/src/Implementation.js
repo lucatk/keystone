@@ -13,12 +13,14 @@ class Field {
       schemaDoc,
       adminDoc,
       adminConfig,
+      isReadOnly,
       ...config
     },
     { getListByKey, listKey, listAdapter, fieldAdapterClass, defaultAccess, schemaNames }
   ) {
     this.path = path;
     this.isPrimaryKey = path === 'id';
+    this.isReadOnly = isReadOnly;
     this.schemaDoc = schemaDoc;
     this.adminDoc = adminDoc;
     this.adminConfig = adminConfig;
@@ -182,6 +184,7 @@ class Field {
       // functions
       defaultValue: typeof this.defaultValue !== 'function' ? this.defaultValue : undefined,
       isPrimaryKey: this.isPrimaryKey,
+      isReadOnly: this.isReadOnly,
       ...this.adminConfig,
       // NOTE: This data is serialised, so we're unable to pass through any
       // access control _functions_. But we can still check for the boolean case
